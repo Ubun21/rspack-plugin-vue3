@@ -1,0 +1,21 @@
+[package]
+name = "rspack-plugin-vue3"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitflags = "2.2.1"
+lazy_static = "1.4.0"
+maplit = "1.0.2"
+regex = "1.8.1"
+swc_common = { version = "0.31.11", features = ["tty-emitter"] }
+swc_ecma_ast = "0.104.4"
+swc_ecma_codegen = "0.139.13"
+swc_ecma_parser = "0.134.11"
+swc_ecma_visit = { version = "0.90.4", features = ["path"] }
+swc_estree_ast = "0.21.11"
+
+[dev-dependencies]
+insta = { version = "1.29.0", features = ["yaml"] }
